@@ -86,6 +86,7 @@
             this.Controls.Add(this.scBase);
             this.Name = "cEncuesta";
             this.Size = new System.Drawing.Size(700, 700);
+            this.Load += new System.EventHandler(this.cEncuesta_Load);
             this.scBase.Panel1.ResumeLayout(false);
             this.scBase.Panel1.PerformLayout();
             this.scBase.Panel2.ResumeLayout(false);

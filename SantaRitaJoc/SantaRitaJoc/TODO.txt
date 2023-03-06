@@ -1,0 +1,8 @@
+﻿
+- Eventos para checkear una opcion e ir a la encuesta para guardar la info.
+
+- crear dos Usuarios, el admin y el usuario Normal
+
+- Crear UI para generar las preguntas (solo para el admin)
+
+- Gestion de eventos en la ventana principal de primera pagina, ultima y siguiente

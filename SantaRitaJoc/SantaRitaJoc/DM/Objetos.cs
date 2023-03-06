@@ -58,6 +58,7 @@ namespace SantaRitaJoc.DM
     public class Pregunta
     {
         public List<Opcion> opciones { get; set; }
+        public string codPregunta { get; set; }
         public string pregunta { get; set; }
         public bool esCorrecta
         {

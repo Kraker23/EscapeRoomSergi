@@ -46,6 +46,7 @@
         }
       ],
       "pregunta": "Pregunta 0",
+      "codPregunta": "Pregunta0",
       "esCorrecta": false
     },
     {
@@ -80,6 +81,7 @@
         }
       ],
       "pregunta": "Pregunta 1",
+      "codPregunta": "Pregunta1",
       "esCorrecta": false
     },
     {
@@ -114,6 +116,7 @@
         }
       ],
       "pregunta": "Pregunta 2",
+      "codPregunta": "Pregunta2",
       "esCorrecta": false
     },
     {
@@ -148,6 +151,7 @@
         }
       ],
       "pregunta": "Pregunta 3",
+      "codPregunta": "Pregunta3",
       "esCorrecta": false
     }
   ]
