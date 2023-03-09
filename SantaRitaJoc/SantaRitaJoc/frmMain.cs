@@ -2,6 +2,8 @@ using Newtonsoft.Json;
 using SantaRitaJoc.Control;
 using SantaRitaJoc.DM;
 using System.Windows.Forms;
+using static System.Windows.Forms.Design.AxImporter;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SantaRitaJoc
 {
@@ -13,9 +15,10 @@ namespace SantaRitaJoc
             tabInici,
             tabFinal
         }
-
+        private int paginaActual = 0;
         private TabControlHelper myHelper { get; set; }
         private Encuesta encuesta { get; set; }
+
 
         public frmMain()
         {
@@ -45,6 +48,7 @@ namespace SantaRitaJoc
                 for (int o = 0; o < numOpciones; o++)
                 {
                     Opcion opcion = new Opcion();
+                    opcion.codOpcion = $"{preguntaAux.codPregunta}_Opcion{o.ToString()}";
                     opcion.descripcion = $"{preguntaAux.pregunta} -> Opcion {o.ToString()}";
                     opcion.rutaImagen = Path.Combine(Environment.CurrentDirectory, $"p{p}-o{o}.png");
                     if (o == 1)
@@ -85,36 +89,42 @@ namespace SantaRitaJoc
             }
         }
 
-
         #endregion
 
         #region Gestion Tabs
         private void CargarTabs()
         {
-            //TabControl myTabControl = new TabControl();
-            //myTabControl.Dock = DockStyle.Fill;
-            // myHelper = new TabControlHelper(myTabControl); 
-            myHelper = new TabControlHelper(tabControl);
-
             int contador = 1;
             foreach (Pregunta pregunta in encuesta.preguntas)
             {
                 TabPage tab = new TabPage(pregunta.codPregunta);
-                cEncuesta cEncuestaAux=CrearEncuesta(pregunta);
+                tab.Name = pregunta.codPregunta;
+                cEncuesta cEncuestaAux = CrearEncuesta(pregunta);
                 cEncuestaAux.Dock = DockStyle.Fill;
+                cEncuestaAux.ActualizarPregunta += cEncuesta_ActualizarPregunta;
                 tab.Controls.Add(cEncuestaAux);
 
-
-                myHelper.InsertTabPage(tab, contador);
+                tabControl.TabPages.Add(tab);
                 contador++;
             }
+            //controles.Add(opcionAux.codOpcion, cOpcionAux);
 
+            TabPage tabFinal = new TabPage("Final");
+            tabFinal.Name = tabsBase.tabFinal.ToString();
+            tabControl.TabPages.Add(tabFinal);
 
-            myHelper.HidePage(tabsBase.tabFinal.ToString());
+            myHelper = new TabControlHelper(tabControl);
+            myHelper.HideAllPages();
+            myHelper.ShowPage(tabsBase.tabInici.ToString());
 
             this.Controls.Add(tabControl);
 
+            btEmpezar.Visible = true;
+            btSiguiente.Visible = false;
+            btReiniciar.Visible = false;
+
         }
+
 
         private cEncuesta CrearEncuesta(Pregunta pregunta)
         {
@@ -124,17 +134,79 @@ namespace SantaRitaJoc
 
         private void btEmpezar_Click(object sender, EventArgs e)
         {
-           
-        }
+            Pregunta preguntaAux = encuesta.preguntas.First();
+            myHelper.ShowPage(preguntaAux.codPregunta);
 
-        private void btReiniciar_Click(object sender, EventArgs e)
-        {
+            myHelper.HidePage(tabsBase.tabInici.ToString());
+
+            paginaActual = encuesta.preguntas.IndexOf(preguntaAux);
+
+            btEmpezar.Visible = false;
+            btSiguiente.Visible = true;
+            ActualizarInfo();
         }
 
         private void btSiguiente_Click(object sender, EventArgs e)
         {
+            paginaActual++;
+            if (encuesta.preguntas.Count() > paginaActual)
+            {
+                Pregunta preguntaAux = encuesta.preguntas[paginaActual];
+                myHelper.ShowPage(preguntaAux.codPregunta);
+
+                myHelper.HidePage(encuesta.preguntas[paginaActual - 1].codPregunta);
+
+                btSiguiente.Visible = true;
+                btReiniciar.Visible = false;
+            }
+            else
+            {
+                myHelper.ShowPage(tabsBase.tabFinal.ToString());
+
+                myHelper.HidePage(encuesta.preguntas[paginaActual - 1].codPregunta); ;
+
+                btSiguiente.Visible = false;
+                btReiniciar.Visible = true;
+            }
+        }
+
+        private void btReiniciar_Click(object sender, EventArgs e)
+        {
+            paginaActual = 0;
+            myHelper.ShowPage(tabsBase.tabInici.ToString());
+            myHelper.HidePage(tabsBase.tabFinal.ToString());
+            tabControl.SelectedTab = myHelper.GetTabPage(tabsBase.tabInici.ToString()).Key;
+
+
+            btEmpezar.Visible = true;
+            btSiguiente.Visible = false;
+            btReiniciar.Visible = false;
+
         }
 
         #endregion
+
+
+        private void cEncuesta_ActualizarPregunta(Pregunta pregunta)
+        {
+            foreach (Pregunta preg in encuesta.preguntas)
+            {
+                if (preg.codPregunta == pregunta.codPregunta)
+                {
+                    preg.opciones = pregunta.opciones;
+                }
+            }
+            ActualizarInfo();
+        }
+
+        private void ActualizarInfo()
+        {
+            string info = string.Empty;
+            foreach (Pregunta preg in encuesta.preguntas)
+            {
+                info += $"Pregunta ->{preg.codPregunta}, Seleccionada Opcion {preg.opciones.FirstOrDefault(x => x.seleccionada)?.codOpcion ?? "--"}  Correcta :{(preg.esCorrecta ? "Si" : "No")}. {Environment.NewLine} ";
+            }
+            txtInfo.Text = info;
+        }
     }
 }

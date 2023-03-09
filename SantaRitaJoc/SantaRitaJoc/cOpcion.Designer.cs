@@ -44,6 +44,7 @@
             this.chkOpcion.TabIndex = 1;
             this.chkOpcion.Text = "Opcion";
             this.chkOpcion.UseVisualStyleBackColor = true;
+            this.chkOpcion.CheckedChanged += new System.EventHandler(this.chkOpcion_CheckedChanged);
             // 
             // pbImagen
             // 

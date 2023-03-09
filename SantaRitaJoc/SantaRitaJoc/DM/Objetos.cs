@@ -86,6 +86,7 @@ namespace SantaRitaJoc.DM
     public class Opcion
     {
         public string descripcion { get; set; }
+        public string codOpcion { get; set; }
         public Image imagen
         {
             get

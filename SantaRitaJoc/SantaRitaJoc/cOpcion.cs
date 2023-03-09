@@ -14,6 +14,9 @@ namespace SantaRitaJoc
 {
     public partial class cOpcion : UserControl
     {
+        public event OpcionEvent EventoOpcion;
+        public delegate void OpcionEvent(Opcion opcion);
+
         public Opcion opcion { get; set; }
         public bool esSelecionada
         {
@@ -29,6 +32,7 @@ namespace SantaRitaJoc
         }
 
 
+        public bool marcando { get; set; }
         public cOpcion()
         {
             InitializeComponent();
@@ -51,6 +55,20 @@ namespace SantaRitaJoc
             this.pbImagen.Image = opcion.imagen;
         }
 
-       
+        private void chkOpcion_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!marcando)
+            {
+                marcando = true;
+                opcion.seleccionada = this.chkOpcion.Checked;
+                EventoOpcion?.Invoke(opcion);
+                marcando = false;
+            }
+        }
+
+        public void DesmarcarSeleccion()
+        {
+            this.chkOpcion.Checked=opcion.seleccionada = false;
+        }
     }
 }

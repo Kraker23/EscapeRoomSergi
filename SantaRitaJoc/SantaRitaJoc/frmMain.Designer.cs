@@ -30,11 +30,11 @@
         {
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabInici = new System.Windows.Forms.TabPage();
-            this.tabFinal = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btReiniciar = new System.Windows.Forms.Button();
             this.btEmpezar = new System.Windows.Forms.Button();
             this.btSiguiente = new System.Windows.Forms.Button();
+            this.txtInfo = new System.Windows.Forms.TextBox();
             this.tabControl.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -42,7 +42,6 @@
             // tabControl
             // 
             this.tabControl.Controls.Add(this.tabInici);
-            this.tabControl.Controls.Add(this.tabFinal);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
@@ -60,17 +59,9 @@
             this.tabInici.Text = "Inici";
             this.tabInici.UseVisualStyleBackColor = true;
             // 
-            // tabFinal
-            // 
-            this.tabFinal.Location = new System.Drawing.Point(4, 24);
-            this.tabFinal.Name = "tabFinal";
-            this.tabFinal.Size = new System.Drawing.Size(1255, 592);
-            this.tabFinal.TabIndex = 2;
-            this.tabFinal.Text = "Final";
-            this.tabFinal.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtInfo);
             this.panel1.Controls.Add(this.btReiniciar);
             this.panel1.Controls.Add(this.btEmpezar);
             this.panel1.Controls.Add(this.btSiguiente);
@@ -113,6 +104,14 @@
             this.btSiguiente.UseVisualStyleBackColor = true;
             this.btSiguiente.Click += new System.EventHandler(this.btSiguiente_Click);
             // 
+            // txtInfo
+            // 
+            this.txtInfo.Location = new System.Drawing.Point(12, 6);
+            this.txtInfo.Multiline = true;
+            this.txtInfo.Name = "txtInfo";
+            this.txtInfo.Size = new System.Drawing.Size(943, 82);
+            this.txtInfo.TabIndex = 6;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -124,6 +123,7 @@
             this.Text = "Santa Rita Joc";
             this.tabControl.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -136,6 +136,6 @@
         private Button btReiniciar;
         private Button btEmpezar;
         private Button btSiguiente;
-        private TabPage tabFinal;
+        private TextBox txtInfo;
     }
 }

@@ -47,18 +47,31 @@ namespace SantaRitaJoc.Control
             if (!_tabControl.TabPages.ContainsKey(keyTab)) return;
             _tabControl.TabPages.RemoveByKey(keyTab);
         }
+        public void HidePage(int pos)
+        {
+            if (_tabControl.TabPages.Count < pos) return;
+            _tabControl.TabPages.RemoveAt(pos);
+        }
 
         public void ShowPage(TabPage tabpage)
         {
             if (_tabControl.TabPages.Contains(tabpage)) return;
-            InsertTabPage(GetTabPage(tabpage).Key, GetTabPage(tabpage).Value);
+            InsertTabPage(GetTabPage(tabpage).Key);
+           // InsertTabPage(GetTabPage(tabpage).Key, GetTabPage(tabpage).Value);
         }
         public void ShowPage(string keyTab)
         {
             if (_tabControl.TabPages.ContainsKey(keyTab)) return;
-            InsertTabPage(GetTabPage(keyTab).Key, GetTabPage(keyTab).Value);
+            InsertTabPage(GetTabPage(keyTab).Key);
+           // InsertTabPage(GetTabPage(keyTab).Key, GetTabPage(keyTab).Value);
         }
-        public void InsertTabPage(TabPage tabpage, int index)
+        public void ShowPage(int pos)
+        {
+            if (_tabControl.TabPages.Count<pos) return;
+            InsertTabPage(GetTabPage(pos).Key);
+            //InsertTabPage(GetTabPage(pos).Key, GetTabPage(pos).Value);
+        }
+       /* public void InsertTabPage(TabPage tabpage, int index)
         {
             if (index < 0 || index > _tabControl.TabCount)
                 throw new ArgumentException("Index out of Range.");
@@ -69,6 +82,13 @@ namespace SantaRitaJoc.Control
                     SwapTabPages(tabpage, (_tabControl.TabPages[_tabControl.TabPages.IndexOf(tabpage) - 1]));
                 }
                 while (_tabControl.TabPages.IndexOf(tabpage) != index);
+            _tabControl.SelectedTab = tabpage;
+        }*/
+
+        public void InsertTabPage(TabPage tabpage)
+        {
+            _tabControl.TabPages.Add(tabpage);
+           
             _tabControl.SelectedTab = tabpage;
         }
 
@@ -88,9 +108,13 @@ namespace SantaRitaJoc.Control
             return _pagesIndexed.Where(p => p.Key == tabpage).First();
         }
 
-        private KeyValuePair<TabPage, int> GetTabPage(string keyTab)
+        public KeyValuePair<TabPage, int> GetTabPage(string keyTab)
         {
             return _pagesIndexed.Where(p => p.Key.Name == keyTab).First();
+        }
+        public KeyValuePair<TabPage, int> GetTabPage(int pos)
+        {
+            return _pagesIndexed.Where(p => p.Value == pos).First();
         }
     }
 }

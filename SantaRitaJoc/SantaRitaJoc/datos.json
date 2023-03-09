@@ -17,6 +17,7 @@
     {
       "opciones": [
         {
+          "codOpcion": "Pregunta0_Opcion0",
           "descripcion": "Pregunta 0 -> Opcion 0",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p0-o0.png",
@@ -24,6 +25,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta0_Opcion1",
           "descripcion": "Pregunta 0 -> Opcion 1",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p0-o1.png",
@@ -31,6 +33,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta0_Opcion2",
           "descripcion": "Pregunta 0 -> Opcion 2",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p0-o2.png",
@@ -38,6 +41,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta0_Opcion3",
           "descripcion": "Pregunta 0 -> Opcion 3",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p0-o3.png",
@@ -52,6 +56,7 @@
     {
       "opciones": [
         {
+          "codOpcion": "Pregunta1_Opcion0",
           "descripcion": "Pregunta 1 -> Opcion 0",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p1-o0.png",
@@ -59,6 +64,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta1_Opcion1",
           "descripcion": "Pregunta 1 -> Opcion 1",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p1-o1.png",
@@ -66,6 +72,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta1_Opcion2",
           "descripcion": "Pregunta 1 -> Opcion 2",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p1-o2.png",
@@ -73,6 +80,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta1_Opcion3",
           "descripcion": "Pregunta 1 -> Opcion 3",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p1-o3.png",
@@ -87,6 +95,7 @@
     {
       "opciones": [
         {
+          "codOpcion": "Pregunta2_Opcion0",
           "descripcion": "Pregunta 2 -> Opcion 0",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p2-o0.png",
@@ -94,6 +103,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta2_Opcion1",
           "descripcion": "Pregunta 2 -> Opcion 1",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p2-o1.png",
@@ -101,6 +111,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta2_Opcion2",
           "descripcion": "Pregunta 2 -> Opcion 2",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p2-o2.png",
@@ -108,6 +119,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta2_Opcion3",
           "descripcion": "Pregunta 2 -> Opcion 3",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p2-o3.png",
@@ -122,6 +134,7 @@
     {
       "opciones": [
         {
+          "codOpcion": "Pregunta3_Opcion0",
           "descripcion": "Pregunta 3 -> Opcion 0",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p3-o0.png",
@@ -129,6 +142,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta3_Opcion1",
           "descripcion": "Pregunta 3 -> Opcion 1",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p3-o1.png",
@@ -136,6 +150,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta3_Opcion2",
           "descripcion": "Pregunta 3 -> Opcion 2",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p3-o2.png",
@@ -143,6 +158,7 @@
           "seleccionada": false
         },
         {
+          "codOpcion": "Pregunta3_Opcion3",
           "descripcion": "Pregunta 3 -> Opcion 3",
           "imagen": null,
           "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p3-o3.png",
