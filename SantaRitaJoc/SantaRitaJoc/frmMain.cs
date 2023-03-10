@@ -140,11 +140,11 @@ namespace SantaRitaJoc
         {
             txtFinal = new System.Windows.Forms.TextBox();
 
-            txtFinal.Location = new System.Drawing.Point(146, 112);
+            txtFinal.Location = new System.Drawing.Point(55, 99);
             txtFinal.Multiline = true;
             txtFinal.Name = "txtInicio";
             txtFinal.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            txtFinal.Size = new System.Drawing.Size(627, 320);
+            txtFinal.Size = new System.Drawing.Size(614, 504); 
             txtFinal.TabIndex = 7;
             txtFinal.Enabled = false;
             txtFinal.TextAlign = HorizontalAlignment.Center;
