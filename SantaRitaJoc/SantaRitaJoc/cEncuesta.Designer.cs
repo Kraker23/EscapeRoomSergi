@@ -40,6 +40,7 @@
             // scBase
             // 
             this.scBase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scBase.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.scBase.Location = new System.Drawing.Point(0, 0);
             this.scBase.Name = "scBase";
             this.scBase.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -47,13 +48,12 @@
             // scBase.Panel1
             // 
             this.scBase.Panel1.Controls.Add(this.lblPregunta);
-            this.scBase.Panel1MinSize = 100;
+            this.scBase.Panel1MinSize = 50;
             // 
             // scBase.Panel2
             // 
             this.scBase.Panel2.Controls.Add(this.tbpOpciones);
-            this.scBase.Size = new System.Drawing.Size(700, 700);
-            this.scBase.SplitterDistance = 118;
+            this.scBase.Size = new System.Drawing.Size(387, 332);
             this.scBase.TabIndex = 1;
             // 
             // lblPregunta
@@ -76,7 +76,7 @@
             this.tbpOpciones.RowCount = 2;
             this.tbpOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tbpOpciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tbpOpciones.Size = new System.Drawing.Size(700, 578);
+            this.tbpOpciones.Size = new System.Drawing.Size(387, 278);
             this.tbpOpciones.TabIndex = 0;
             // 
             // cEncuesta
@@ -85,7 +85,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.scBase);
             this.Name = "cEncuesta";
-            this.Size = new System.Drawing.Size(700, 700);
+            this.Size = new System.Drawing.Size(387, 332);
             this.Load += new System.EventHandler(this.cEncuesta_Load);
             this.scBase.Panel1.ResumeLayout(false);
             this.scBase.Panel1.PerformLayout();

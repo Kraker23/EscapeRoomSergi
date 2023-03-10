@@ -70,5 +70,28 @@ namespace SantaRitaJoc
         {
             this.chkOpcion.Checked=opcion.seleccionada = false;
         }
+
+        private void cOpcion_Click(object sender, EventArgs e)
+        {
+            if (!marcando)
+            {
+                marcando = true;
+                opcion.seleccionada = this.chkOpcion.Checked=! this.chkOpcion.Checked;
+                EventoOpcion?.Invoke(opcion);
+                marcando = false;
+            }
+        }
+
+        private void pbImagen_Click(object sender, EventArgs e)
+        {
+            if (!marcando)
+            {
+                marcando = true;
+                opcion.seleccionada = this.chkOpcion.Checked = !this.chkOpcion.Checked;
+                EventoOpcion?.Invoke(opcion);
+                marcando = false;
+            }
+
+        }
     }
 }

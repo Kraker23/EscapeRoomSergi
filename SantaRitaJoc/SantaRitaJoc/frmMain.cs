@@ -19,11 +19,13 @@ namespace SantaRitaJoc
         private TabControlHelper myHelper { get; set; }
         private Encuesta encuesta { get; set; }
 
-
+        private System.Windows.Forms.TextBox txtFinal { get; set; }
+        public Dictionary<string, cEncuesta> controles { get; set; }
         public frmMain()
         {
             InitializeComponent();
 
+            controles = new Dictionary<string, cEncuesta>();
             // CrearJson();
             LeerDatosJson();
 
@@ -104,13 +106,16 @@ namespace SantaRitaJoc
                 cEncuestaAux.ActualizarPregunta += cEncuesta_ActualizarPregunta;
                 tab.Controls.Add(cEncuestaAux);
 
+                controles.Add(pregunta.codPregunta, cEncuestaAux);
                 tabControl.TabPages.Add(tab);
                 contador++;
             }
-            //controles.Add(opcionAux.codOpcion, cOpcionAux);
+
+            CrearTextBoxResultado();
 
             TabPage tabFinal = new TabPage("Final");
             tabFinal.Name = tabsBase.tabFinal.ToString();
+            tabFinal.Controls.Add(txtFinal);
             tabControl.TabPages.Add(tabFinal);
 
             myHelper = new TabControlHelper(tabControl);
@@ -119,12 +124,30 @@ namespace SantaRitaJoc
 
             this.Controls.Add(tabControl);
 
+            encuesta.MensajePrincipal.ForEach(x =>
+            {
+                txtInicio.Text += $"{x}  {Environment.NewLine}{Environment.NewLine}";
+            });
+
             btEmpezar.Visible = true;
             btSiguiente.Visible = false;
             btReiniciar.Visible = false;
 
         }
 
+        private void CrearTextBoxResultado()
+        {
+            txtFinal = new System.Windows.Forms.TextBox();
+
+            txtFinal.Location = new System.Drawing.Point(146, 112);
+            txtFinal.Multiline = true;
+            txtFinal.Name = "txtInicio";
+            txtFinal.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            txtFinal.Size = new System.Drawing.Size(627, 320);
+            txtFinal.TabIndex = 7;
+            txtFinal.Enabled = false;
+            txtFinal.TextAlign = HorizontalAlignment.Center;
+        }
 
         private cEncuesta CrearEncuesta(Pregunta pregunta)
         {
@@ -161,6 +184,7 @@ namespace SantaRitaJoc
             }
             else
             {
+                txtFinal.Text = encuesta.ResultadoEncuesta;
                 myHelper.ShowPage(tabsBase.tabFinal.ToString());
 
                 myHelper.HidePage(encuesta.preguntas[paginaActual - 1].codPregunta); ;
@@ -177,7 +201,16 @@ namespace SantaRitaJoc
             myHelper.HidePage(tabsBase.tabFinal.ToString());
             tabControl.SelectedTab = myHelper.GetTabPage(tabsBase.tabInici.ToString()).Key;
 
+            encuesta.preguntas.ForEach(p =>
+            {
+                if (p.opciones.Any(o => o.seleccionada == false))
+                {
+                    controles.First(x => x.Key == p.codPregunta).Value.DesmarcarSeleccion();
+                }
+                //p.opciones.ForEach(o => o.seleccionada = false))
+            });
 
+            ActualizarInfo();
             btEmpezar.Visible = true;
             btSiguiente.Visible = false;
             btReiniciar.Visible = false;

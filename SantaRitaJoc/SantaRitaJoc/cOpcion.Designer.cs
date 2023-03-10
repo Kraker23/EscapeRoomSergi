@@ -51,22 +51,26 @@
             this.pbImagen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbImagen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbImagen.Location = new System.Drawing.Point(19, 45);
             this.pbImagen.Name = "pbImagen";
             this.pbImagen.Size = new System.Drawing.Size(250, 168);
             this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen.TabIndex = 2;
             this.pbImagen.TabStop = false;
+            this.pbImagen.Click += new System.EventHandler(this.pbImagen_Click);
             // 
             // cOpcion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.pbImagen);
             this.Controls.Add(this.chkOpcion);
             this.Name = "cOpcion";
             this.Size = new System.Drawing.Size(294, 234);
             this.Load += new System.EventHandler(this.cOpcion_Load);
+            this.Click += new System.EventHandler(this.cOpcion_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

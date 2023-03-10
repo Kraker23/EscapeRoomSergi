@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.Design.AxImporter;
 
 namespace SantaRitaJoc
 {
@@ -54,9 +55,16 @@ namespace SantaRitaJoc
                     controles.First(x=>x.Key== opc.codOpcion).Value.DesmarcarSeleccion();
                 }
             }
-
-
             ActualizarPregunta?.Invoke(pregunta);
+        }
+
+        public void DesmarcarSeleccion()
+        {
+            var op=pregunta.opciones.Where(o => o.seleccionada).FirstOrDefault();
+            if (op != null)
+            {
+                controles.First(x => x.Key == op.codOpcion).Value.DesmarcarSeleccion();
+            }
         }
     }
 }

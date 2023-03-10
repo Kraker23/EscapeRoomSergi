@@ -1,4 +1,5 @@
 C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\SantaRitaJoc.exe
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\datos.json
 C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\SantaRitaJoc.deps.json
 C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\SantaRitaJoc.runtimeconfig.json
 C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\SantaRitaJoc.dll
@@ -19,4 +20,3 @@ C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\obj\Debug\ne
 C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\obj\Debug\net6.0-windows\SantaRitaJoc.pdb
 C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\obj\Debug\net6.0-windows\SantaRitaJoc.genruntimeconfig.cache
 C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\obj\Debug\net6.0-windows\ref\SantaRitaJoc.dll
-C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\datos.json
