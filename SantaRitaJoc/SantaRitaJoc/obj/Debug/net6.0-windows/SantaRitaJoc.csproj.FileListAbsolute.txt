@@ -20,3 +20,19 @@ C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\obj\Debug\ne
 C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\obj\Debug\net6.0-windows\SantaRitaJoc.pdb
 C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\obj\Debug\net6.0-windows\SantaRitaJoc.genruntimeconfig.cache
 C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\obj\Debug\net6.0-windows\ref\SantaRitaJoc.dll
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 1\Resposta_correcte_Santa_Carme.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 1\Santa_Anna.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 1\Santa_Maria_del_Tura.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 1\Santa_Rita.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 2\BATOIES.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 2\Resposta_Correcte_CLAM.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 2\SANTO_NEGRO.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 2\TIM.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 3\MESTRE_FALLA.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 3\MIRADOR_LA_PUBILLA.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 3\PLA_DE_LLACS.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 3\RESPOSTA_CORRECTE_PARC_OCELLS.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 4\Plaça_del_conill.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 4\Plaça_de_Angel.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 4\Plaça_de_les_rodes.jpg
+C:\VSS-DB\vss-db-Cristian\EscapeRoomSergi\SantaRitaJoc\SantaRitaJoc\bin\Debug\net6.0-windows\Fotos\PREGUNTA 4\Resposta_Correcte_Plaça_Campdenmas.jpg

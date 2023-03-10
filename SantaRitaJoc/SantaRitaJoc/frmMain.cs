@@ -84,6 +84,7 @@ namespace SantaRitaJoc
                 encuesta = new Encuesta();
 
                 encuesta = JsonConvert.DeserializeObject<Encuesta>(jsonDatos);
+                txtInfo.Visible = encuesta.mostrarLog;
             }
             else
             {

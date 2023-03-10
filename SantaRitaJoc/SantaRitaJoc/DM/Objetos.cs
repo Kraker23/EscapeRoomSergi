@@ -19,6 +19,7 @@ namespace SantaRitaJoc.DM
             this.preguntas = preguntas;
         }
 
+        public bool mostrarLog { get; set; }
         public bool esCorrecta
         {
             get
@@ -33,6 +34,18 @@ namespace SantaRitaJoc.DM
 
         public List<string> MensajePrincipal { get; set; }
 
+        public string CodigoResultado
+        {
+            get
+            {
+                string resultado = string.Empty;
+                foreach (Pregunta preg in preguntas)
+                {
+                    resultado += preg.seleccion;
+                }
+                return resultado;
+            }
+        }
         public string CodigoCorrecto { get; set; }
         public string CodigoErroneo { get; set; }
         public string MensajeRegistoRespuestas { get; set; }
@@ -45,11 +58,11 @@ namespace SantaRitaJoc.DM
                 string resultado = string.Empty;
                 if (esCorrecta)
                 {
-                    resultado = $"{MensajeRegistoRespuestas} {Environment.NewLine} {CodigoCorrecto}{Environment.NewLine} {MensajeCrearDuda}";
+                    resultado = $"{MensajeRegistoRespuestas} {Environment.NewLine} {CodigoResultado}{Environment.NewLine} {MensajeCrearDuda}";
                 }
                 else
                 {
-                    resultado = $"{MensajeRegistoRespuestas} {Environment.NewLine} {CodigoErroneo}{Environment.NewLine} {MensajeCrearDuda}";
+                    resultado = $"{MensajeRegistoRespuestas} {Environment.NewLine} {CodigoResultado}{Environment.NewLine} {MensajeCrearDuda}";
                 }
                 return resultado;
             }
@@ -69,6 +82,14 @@ namespace SantaRitaJoc.DM
                     return true;
                 }
                 return false;
+            }
+        }
+        public string seleccion
+        {
+            get
+            {
+                Opcion aux=opciones.FirstOrDefault(x => x.seleccionada);
+                return aux!=null?aux.codOpcion:"-";
             }
         }
         public Pregunta()
@@ -92,11 +113,12 @@ namespace SantaRitaJoc.DM
             get
             {
                 Image aux = null;
-                if (!string.IsNullOrEmpty(rutaImagen))
+
+                if (!string.IsNullOrEmpty(Path.Combine(Environment.CurrentDirectory, rutaImagen)))
                 {
-                    if (File.Exists(rutaImagen))
+                    if (File.Exists(Path.Combine(Environment.CurrentDirectory, rutaImagen)))
                     {
-                        aux = Image.FromFile(rutaImagen);
+                        aux = Image.FromFile(Path.Combine(Environment.CurrentDirectory, rutaImagen));
                     }
                 }
                 return aux;

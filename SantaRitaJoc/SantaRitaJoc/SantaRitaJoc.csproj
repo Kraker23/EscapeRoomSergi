@@ -22,6 +22,58 @@
     <None Update="datos.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Fotos\PREGUNTA 1\Resposta_correcte_Santa_Carme.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 1\Santa_Anna.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 1\Santa_Maria_del_Tura.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 1\Santa_Rita.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 2\BATOIES.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 2\Resposta_Correcte_CLAM.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 2\SANTO_NEGRO.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 2\TIM.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 3\MESTRE_FALLA.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 3\MIRADOR_LA_PUBILLA.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 3\PLA_DE_LLACS.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 3\RESPOSTA_CORRECTE_PARC_OCELLS.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 4\Plaça_del_conill.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 4\Plaça_de_Angel.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 4\Plaça_de_les_rodes.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Fotos\PREGUNTA 4\Resposta_Correcte_Plaça_Campdenmas.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Fotos\" />
   </ItemGroup>
 
 </Project>

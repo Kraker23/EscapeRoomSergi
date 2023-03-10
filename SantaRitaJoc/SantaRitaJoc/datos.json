@@ -1,8 +1,8 @@
 ﻿{
-
+  "mostrarLog": true,
   "esCorrecta": false,
   "MensajePrincipal": [
-    "Ja que cuidem els espais d’Olot, volem que ens diguis quins creus que són els llocs que veuràs a continuació.",
+    "Ja que som a Olot i treballem aquí, volem que ens diguis quins creus que són els llocs que veuràs a continuació.",
     "Selecciona el que creguis que és, però tingues en compte que el resultat pot variar en funció del que triïs."
   ],
   "CodigoCorrecto": 9372,
@@ -17,157 +17,157 @@
     {
       "opciones": [
         {
-          "codOpcion": "Pregunta0_Opcion0",
-          "descripcion": "Pregunta 0 -> Opcion 0",
+          "codOpcion": "1",
+          "descripcion": "Opció 1",
           "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p0-o0.png",
+          "rutaImagen": "Fotos\\Pregunta 1\\Santa_Rita.jpg",
           "verdadera": false,
           "seleccionada": false
         },
         {
-          "codOpcion": "Pregunta0_Opcion1",
-          "descripcion": "Pregunta 0 -> Opcion 1",
+          "codOpcion": "2",
+          "descripcion": "Opció 2",
           "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p0-o1.png",
+          "rutaImagen": "Fotos\\Pregunta 1\\Santa_Maria_del_Tura.jpg",
+          "verdadera": false,
+          "seleccionada": false
+        },
+        {
+          "codOpcion": "3",
+          "descripcion": "Opció 3",
+          "imagen": null,
+          "rutaImagen": "Fotos\\Pregunta 1\\Resposta_correcte_Santa_Carme.jpg",
           "verdadera": true,
           "seleccionada": false
         },
         {
-          "codOpcion": "Pregunta0_Opcion2",
-          "descripcion": "Pregunta 0 -> Opcion 2",
+          "codOpcion": "4",
+          "descripcion": "Opció 4",
           "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p0-o2.png",
-          "verdadera": false,
-          "seleccionada": false
-        },
-        {
-          "codOpcion": "Pregunta0_Opcion3",
-          "descripcion": "Pregunta 0 -> Opcion 3",
-          "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p0-o3.png",
+          "rutaImagen": "Fotos\\Pregunta 1\\Santa_Anna.jpg",
           "verdadera": false,
           "seleccionada": false
         }
       ],
-      "pregunta": "Pregunta 0",
-      "codPregunta": "Pregunta0",
-      "esCorrecta": false
-    },
-    {
-      "opciones": [
-        {
-          "codOpcion": "Pregunta1_Opcion0",
-          "descripcion": "Pregunta 1 -> Opcion 0",
-          "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p1-o0.png",
-          "verdadera": false,
-          "seleccionada": false
-        },
-        {
-          "codOpcion": "Pregunta1_Opcion1",
-          "descripcion": "Pregunta 1 -> Opcion 1",
-          "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p1-o1.png",
-          "verdadera": true,
-          "seleccionada": false
-        },
-        {
-          "codOpcion": "Pregunta1_Opcion2",
-          "descripcion": "Pregunta 1 -> Opcion 2",
-          "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p1-o2.png",
-          "verdadera": false,
-          "seleccionada": false
-        },
-        {
-          "codOpcion": "Pregunta1_Opcion3",
-          "descripcion": "Pregunta 1 -> Opcion 3",
-          "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p1-o3.png",
-          "verdadera": false,
-          "seleccionada": false
-        }
-      ],
-      "pregunta": "Pregunta 1",
+      "pregunta": "Quin d’aquests Sants és Santa Carme?",
       "codPregunta": "Pregunta1",
       "esCorrecta": false
     },
     {
       "opciones": [
         {
-          "codOpcion": "Pregunta2_Opcion0",
-          "descripcion": "Pregunta 2 -> Opcion 0",
+          "codOpcion": "1",
+          "descripcion": "Opció 1",
           "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p2-o0.png",
-          "verdadera": false,
-          "seleccionada": false
-        },
-        {
-          "codOpcion": "Pregunta2_Opcion1",
-          "descripcion": "Pregunta 2 -> Opcion 1",
-          "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p2-o1.png",
+          "rutaImagen": "Fotos\\Pregunta 2\\Resposta_Correcte_CLAM.jpg",
           "verdadera": true,
           "seleccionada": false
         },
         {
-          "codOpcion": "Pregunta2_Opcion2",
-          "descripcion": "Pregunta 2 -> Opcion 2",
+          "codOpcion": "2",
+          "descripcion": "Opció 2",
           "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p2-o2.png",
+          "rutaImagen": "Fotos\\Pregunta 2\\SANTO_NEGRO.jpg",
           "verdadera": false,
           "seleccionada": false
         },
         {
-          "codOpcion": "Pregunta2_Opcion3",
-          "descripcion": "Pregunta 2 -> Opcion 3",
+          "codOpcion": "3",
+          "descripcion": "Opció 3",
           "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p2-o3.png",
+          "rutaImagen": "Fotos\\Pregunta 2\\TIM.jpg",
+          "verdadera": false,
+          "seleccionada": false
+        },
+        {
+          "codOpcion": "4",
+          "descripcion": "Opció 4",
+          "imagen": null,
+          "rutaImagen": "Fotos\\Pregunta 2\\BATOIES.jpg",
           "verdadera": false,
           "seleccionada": false
         }
       ],
-      "pregunta": "Pregunta 2",
+      "pregunta": "Quin d’aquests gegants és en CLAM de la faràndula?",
       "codPregunta": "Pregunta2",
       "esCorrecta": false
     },
     {
       "opciones": [
         {
-          "codOpcion": "Pregunta3_Opcion0",
-          "descripcion": "Pregunta 3 -> Opcion 0",
+          "codOpcion": "1",
+          "descripcion": "Opció 1",
           "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p3-o0.png",
+          "rutaImagen": "Fotos\\Pregunta 3\\MESTRE_FALLA.jpg",
           "verdadera": false,
           "seleccionada": false
         },
         {
-          "codOpcion": "Pregunta3_Opcion1",
-          "descripcion": "Pregunta 3 -> Opcion 1",
+          "codOpcion": "2",
+          "descripcion": "Opció 2",
           "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p3-o1.png",
+          "rutaImagen": "Fotos\\Pregunta 3\\MIRADOR_LA_PUBILLA.jpg",
+          "verdadera": false,
+          "seleccionada": false
+        },
+        {
+          "codOpcion": "3",
+          "descripcion": "Opció 3",
+          "imagen": null,
+          "rutaImagen": "Fotos\\Pregunta 3\\PLA_DE_LLACS.jpg",
+          "verdadera": false,
+          "seleccionada": false
+        },
+        {
+          "codOpcion": "4",
+          "descripcion": "Opció ",
+          "imagen": null,
+          "rutaImagen": "Fotos\\Pregunta 3\\RESPOSTA_CORRECTE_PARC_OCELLS.jpg",
+          "verdadera": true,
+          "seleccionada": false
+        }
+      ],
+      "pregunta": "Quin d’aquests és el parc dels ocells?",
+      "codPregunta": "Pregunta3",
+      "esCorrecta": false
+    },
+    {
+      "opciones": [
+        {
+          "codOpcion": "1",
+          "descripcion": "Opció 1",
+          "imagen": null,
+          "rutaImagen": "Fotos\\Pregunta 4\\Plaça_de_Angel.jpg",
+          "verdadera": false,
+          "seleccionada": false
+        },
+        {
+          "codOpcion": "2",
+          "descripcion": "Opció 2",
+          "imagen": null,
+          "rutaImagen": "Fotos\\Pregunta 4\\Plaça_de_les_rodes.jpg",
+          "verdadera": false,
+          "seleccionada": false
+        },
+        {
+          "codOpcion": "3",
+          "descripcion": "Opció 3",
+          "imagen": null,
+          "rutaImagen": "Fotos\\Pregunta 4\\Resposta_Correcte_Plaça_Campdenmas.jpg",
           "verdadera": true,
           "seleccionada": false
         },
         {
-          "codOpcion": "Pregunta3_Opcion2",
-          "descripcion": "Pregunta 3 -> Opcion 2",
+          "codOpcion": "4",
+          "descripcion": "Opció 4",
           "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p3-o2.png",
-          "verdadera": false,
-          "seleccionada": false
-        },
-        {
-          "codOpcion": "Pregunta3_Opcion3",
-          "descripcion": "Pregunta 3 -> Opcion 3",
-          "imagen": null,
-          "rutaImagen": "C:\\VSS-DB\\vss-db-Cristian\\EscapeRoomSergi\\SantaRitaJoc\\SantaRitaJoc\\bin\\Debug\\net6.0-windows\\p3-o3.png",
+          "rutaImagen": "Fotos\\Pregunta 4\\Plaça_del_conill.jpg",
           "verdadera": false,
           "seleccionada": false
         }
       ],
-      "pregunta": "Pregunta 3",
-      "codPregunta": "Pregunta3",
+      "pregunta": "Quina d’aquestes places d’Olot creus que és la Plaça Campdenmàs?",
+      "codPregunta": "Pregunta4",
       "esCorrecta": false
     }
   ]
